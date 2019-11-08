@@ -1,0 +1,55 @@
+{% extends 'vote/base.html' %}
+
+{% block title %}问题{% endblock %}
+{% block content %}
+<h1>问题</h1>
+
+
+<table class="server_info" border="1">
+    <tr>
+        <th>题目</th>
+        <th>问题类型</th>
+        <th>选项A</th>
+        <th>选项B</th>
+        <th>选项C</th>
+        <th>选项D</th>
+        <th>选项E</th>
+        <th>选项F</th>
+        <th>选项G</th>
+        <th>选项H</th>
+        <th>选项I</th>
+        <th>选项J</th>
+        <th>选项K</th>
+        <th>调查表名</th>
+    </tr>
+    {% for i in question_set %}
+        <tr>
+        <td>{{ i.caption }}</td>
+        <td>{{ i.question_type.type }}</td>
+        <td>{{ i.question_A }}</td>
+        <td>{{ i.question_B }}</td>
+        <td>{{ i.question_C }}</td>
+        <td>{{ i.question_D }}</td>
+        <td>{{ i.question_E }}</td>
+        <td>{{ i.question_F }}</td>
+        <td>{{ i.question_G }}</td>
+        <td>{{ i.question_H }}</td>
+        <td>{{ i.question_I }}</td>
+        <td>{{ i.question_J }}</td>
+        <td>{{ i.question_K }}</td>
+        <td>{{ i.questionnaire }}</td>
+        </td>
+        <td>
+            <!--<a href="serverchange/{{ i.id }}" >编 辑</a>-->
+            <!--<a href="serverdelete/{{ i.id }}">删 除</a>-->
+        </td>
+        </tr>
+    {% endfor %}
+
+
+</table>
+
+{{ error }}
+
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'vote/base.html' %}
+
+{% block title %}问卷调查管理{% endblock %}
+{% block content %}
+<h1>问卷调查管理</h1>
+
+
+<table class="server_info" border="1">
+    <tr>
+        <th>编号</th>
+        <th>问卷调查表</th>
+        <th>问题总数量</th>
+        <th>单选题数量</th>
+        <th>多选题数量</th>
+        <th>问答题数量</th>
+        <th>参与调查人员数量</th>
+
+    </tr>
+    {% for i in questionnaire_set %}
+        <tr>
+        <td>{{ i.id }}</td>
+        <td>{{ i.title }}</td>
+        <td>{{ i.queNum }}</td>
+
+
+        <td> </td>
+        </td>
+        <td>
+            <!--<a href="serverchange/{{ i.id }}" >编 辑</a>-->
+            <!--<a href="serverdelete/{{ i.id }}">删 除</a>-->
+        </td>
+        </tr>
+    {% endfor %}
+
+
+</table>
+
+{{ error }}
+
+{% endblock %}

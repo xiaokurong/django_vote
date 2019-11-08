@@ -1,0 +1,141 @@
+
+
+ul
+{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-color:  #f1f1f1;
+    font-size: 26px;
+
+}
+li a
+{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+
+}
+
+
+
+
+
+
+
+h1
+{
+    margin: 8px
+    padding: 8px
+
+}
+
+#header
+{
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    border: 0px solid;
+    margin: 10px;
+
+}
+
+#menu
+{
+    text-align: left;
+    margin: 0px 10px 0px 10px;
+    color: white;
+    width: 200px;
+    height: 100%;
+    float: left;
+    border: 0px solid black;
+
+}
+
+#content
+{
+    color: #000;
+    text-align: left;
+    background-color: #ddd;
+    border: 0px solid;
+    margin-left: 220px;
+    height: 100%;
+    padding-left: 10px;
+
+}
+
+#container
+{
+    background-color: #f1f1f1;
+    margin: 10px;
+    border: 1px solid;
+}
+
+#body
+{
+    height: 600px;
+    border: 0px solid;
+
+}
+
+.zhanshi
+{
+    padding: 0px;
+    margin:  0px;
+    border: 0px solid black;
+    height: 50%;
+
+}
+
+.fuwuqishuliang
+{
+    width: 48%;
+    border: 1px solid;
+    float: left;
+    height: 100%;
+    margin: 0px 15px 0px 0px;
+    padding-left: 10px;
+
+}
+
+.zuijinlishi
+{
+    float: left;
+    width: 48%;
+    border: 1px solid;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.fuwuqifenzhu
+{
+    width: 48%;
+    border: 1px solid;
+    float: left;
+    height: 100%;
+    margin: 0px 15px 0px 0px;
+    padding-left: 10px;
+
+
+}
+
+.yonghudenglu
+{
+    float: left;
+    width: 48%;
+    border: 1px solid;
+    height: 100%;
+    padding-left: 10px;
+}

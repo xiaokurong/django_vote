@@ -1,0 +1,49 @@
+{% extends 'vote/base.html' %}
+
+{% block title %}调查用户信息管理{% endblock %}
+{% block content %}
+<h1>调查用户信息管理</h1>
+
+
+<table class="server_info" border="1">
+    <tr>
+        <th>编号</th>
+        <th>用户名</th>
+        <th>创建时间</th>
+        <th>年龄</th>
+        <th>性别</th>
+        <th>所在乡</th>
+        <th>所在村</th>
+        <th>贫困户</th>
+        <th>疾病类型</th>
+        <th>特殊人群</th>
+        <th>参与调查问卷</th>
+    </tr>
+    {% for i in investigateuser_set %}
+        <tr>
+        <td>{{ i.id }}</td>
+        <td>{{ i.user_name }}</td>
+        <td>{{ i.add_date }}</td>
+        <td>{{ i.user_age }}</td>
+        <td>{{ i.get_user_sex_display }}</td>
+        <td>{{ i.user_countryside }}</td>
+        <td>{{ i.user_village }}</td>
+        <td>{{ i.get_user_poor_type_display }}</td>
+        <td>{{ i.user_ill_type }}</td>
+        <td>{{ i.get_user_speical_human_display }}</td>
+
+        <td> </td>
+        </td>
+        <td>
+            <!--<a href="serverchange/{{ i.id }}" >编 辑</a>-->
+            <!--<a href="serverdelete/{{ i.id }}">删 除</a>-->
+        </td>
+        </tr>
+    {% endfor %}
+
+
+</table>
+
+{{ error }}
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'vote/base.html' %}
+
+{% block title %}调查历史{% endblock %}
+{% block content %}
+<h1>调查历史</h1>
+
+{% for i in answer_set %}
+
+        {{ i.question.caption }}
+
+        {{ i.invest_user.name }}
+        {{ i.investigator.name }}
+        {% if  i.question.question_type==1 %}
+
+        {% endif %}
+
+
+    {% endfor %}
+
+{% endblock %}
