@@ -85,4 +85,6 @@ def investigateuser(request):
 
 
 def other(request):
+
+
     return render(request,'vote/other.html')
